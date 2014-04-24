@@ -1,0 +1,1184 @@
+TCordovaLib
+v6
+r1
+cCheck dependencies
+cCpHeader Classes/NSDictionary+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+cCpHeader Classes/CDVInvokedUrlCommand.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+cCpHeader Classes/NSData+Base64.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+cCpHeader Classes/CDVPluginResult.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+cCpHeader Classes/CDVPlugin.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+cCpHeader Classes/CDVDebug.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+cCpHeader Classes/CDVWhitelist.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+cCpHeader Classes/CDVURLProtocol.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+cCpHeader Classes/CDVCommandDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+cCpHeader Classes/CDVViewController.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+cCpHeader Classes/CDV.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h
+cCpHeader Classes/CDVAvailability.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+cCpHeader Classes/CDVLocalStorage.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+cCpHeader Classes/UIDevice+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+cCpHeader Classes/NSArray+Comparisons.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+cCpHeader Classes/CDVCommandQueue.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+cCpHeader Classes/CDVCommandDelegateImpl.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+cCpHeader Classes/CDVShared.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+cCpHeader Classes/CDVScreenOrientationDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+cCpHeader Classes/CDVConfigParser.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+cCpHeader Classes/CDVJSON.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+cCpHeader Classes/CDVWebViewDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+cCpHeader Classes/CDVUserAgentUtil.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+cCpHeader Classes/CDVTimer.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+cProcessPCH /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000532361A900000000000003B4
+t1394827689
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532361B3000000000000019E
+t1394827699
+s414
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDV.h
+c00000000534610230000000000000516
+t1397100579
+s1302
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+c00000000534610230000000000000CBF
+t1397100579
+s3263
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+c000000005346102300000000000008BA
+t1397100579
+s2234
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+c00000000534610230000000000000473
+t1397100579
+s1139
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+c0000000053461023000000000000127C
+t1397100579
+s4732
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+c00000000534610230000000000000501
+t1397100579
+s1281
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+c000000005346102300000000000017C5
+t1397100579
+s6085
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+c000000005346102300000000000004CB
+t1397100579
+s1227
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+c00000000534610230000000000000EB2
+t1397100579
+s3762
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h
+c00000000534610230000000000000401
+t1397100579
+s1025
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+c000000005346102300000000000007E6
+t1397100579
+s2022
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+c00000000534610230000000000000DDE
+t1397100579
+s3550
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+c000000005346102300000000000003DA
+t1397100579
+s986
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m
+c0000000053461023000000000000098E
+t1397100579
+s2446
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+c000000005346102300000000000006CF
+t1397100579
+s1743
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+c00000000534610230000000000004C7E
+t1397100579
+s19582
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+c00000000534610230000000000000892
+t1397100579
+s2194
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+c000000005346102300000000000016AE
+t1397100579
+s5806
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+c00000000534610230000000000000C13
+t1397100579
+s3091
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+c00000000534610230000000000001B29
+t1397100579
+s6953
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+c00000000534610230000000000000408
+t1397100579
+s1032
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.h
+c000000005346102300000000000003E6
+t1397100579
+s998
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m
+c000000005346102300000000000006B6
+t1397100579
+s1718
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h
+c0000000053461023000000000000038D
+t1397100579
+s909
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m
+c00000000534610230000000000000AA2
+t1397100579
+s2722
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+c0000000053461023000000000000041C
+t1397100579
+s1052
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+c00000000534610230000000000002514
+t1397100579
+s9492
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+c00000000534610230000000000000421
+t1397100579
+s1057
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+c000000005346102300000000000012A2
+t1397100579
+s4770
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+c00000000534610230000000000000ACC
+t1397100579
+s2764
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m
+c0000000053461023000000000000879D
+t1397100579
+s34717
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+c000000005346102300000000000005A2
+t1397100579
+s1442
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+c00000000534610230000000000003804
+t1397100579
+s14340
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+c000000005346102300000000000004B4
+t1397100579
+s1204
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+c000000005346102300000000000027D3
+t1397100579
+s10195
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+c00000000534610230000000000000392
+t1397100579
+s914
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+c000000005346102300000000000004D8
+t1397100579
+s1240
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+c0000000053461023000000000000037D
+t1397100579
+s893
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+c000000005346102300000000000022CC
+t1397100579
+s8908
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+c000000005346102300000000000005DA
+t1397100579
+s1498
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+c00000000534610230000000000001059
+t1397100579
+s4185
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+c000000005346102300000000000003A0
+t1397100579
+s928
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+c00000000534610230000000000000584
+t1397100579
+s1412
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+c00000000534610230000000000000476
+t1397100579
+s1142
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+c00000000534610230000000000000620
+t1397100579
+s1568
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+c00000000534610230000000000000346
+t1397100579
+s838
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
+t1397100600
+s60276
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
+t1397100600
+s57320
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
+t1397100600
+s27416
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
+t1397100599
+s18216
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
+t1397100600
+s10536
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
+t1397100600
+s106404
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
+t1397100600
+s57088
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
+t1397100599
+s36608
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
+t1397100600
+s9016
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
+t1397100600
+s22584
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
+t1397100600
+s68612
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
+t1397100600
+s50456
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
+t1397100601
+s159332
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
+t1397100600
+s68908
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
+t1397100599
+s41420
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList
+c00000000534610350000000000000C3F
+t1397100597
+s3135
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
+t1397100600
+s7188
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
+t1397100599
+s10880
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
+t1397100599
+s17300
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
+t1397100599
+s6744
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
+t1397100600
+s9164
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+t2
+s0
+
+N/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a
+t2
+s0
+
+N/var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch
+t1397100599
+s3239012
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies4b7511b547f6b841^8fa933b547f6b841^---0#1#1#--18"Check dependencies36"58C48F9C-7ABC-4F3C-9641-E13F1694DBBD-
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.328964
+e418793400.641801
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m216"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere65a54b847f6b841^a584a4b847f6b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m0000000000000000^3776"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o36"558F0F88-EF82-4A27-B54E-550581D9FFA0-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.286829
+e418793400.579083
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera69a49b847f6b841^0c3f94b847f6b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m0000000000000000^3734"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o36"EEE39BFA-F807-4755-8D8A-0097632A922B-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.506367
+e418793400.577366
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler51c181b847f6b841^fbce93b847f6b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m0000000000000000^3734"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o36"53E3EEB1-A52F-4647-9A59-1C78D1C12E84-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.264081
+e418793399.348652
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m212"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc2fa43b747f6b841^bea059b747f6b841^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m0000000000000000^3764"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o36"A323EED3-EAAB-405B-B4A1-999776C66428-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.577657
+e418793400.644036
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m186"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler110094b847f6b841^cedfa4b847f6b841^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m0000000000000000^3686"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o36"28A26521-8694-495F-B53E-6E96A97CF5D6-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.465297
+e418793400.286512
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler884677b747f6b841^b95449b847f6b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m0000000000000000^3734"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o36"3A226EF8-B3EF-4138-8DBE-89FAD336C5F2-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.344837
+e418793400.285513
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m190"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2c6658b747f6b841^611749b847f6b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m0000000000000000^3698"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o36"906A9FFE-6ED1-407F-8333-B807E353C9E0-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.269633
+e418793399.362741
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m202"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler738345b747f6b841^87dc5cb747f6b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m0000000000000000^3734"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o36"4F9AF597-F5A1-4D7D-9264-60D6F3451CED-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.685675
+e418793400.786053
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m190"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfcabafb847f6b841^3e42c9b847f6b841^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m0000000000000000^3698"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o36"FD12A264-8C76-4835-9EEA-4A33C3A9C737-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.644258
+e418793400.685177
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m188"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5113a5b847f6b841^0075afb847f6b841^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m0000000000000000^3692"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o36"B8206ECA-34BE-403B-AA0C-E070F6BD3BB0-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.362994
+e418793400.285590
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m200"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler97035db747f6b841^6e3349b847f6b841^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m0000000000000000^3728"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o36"A7F39550-8276-48D1-B1F5-02C648C8DC27-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.579388
+e418793400.786398
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m204"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf87194b847f6b841^6155c9b847f6b841^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m0000000000000000^3740"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o36"1420CF74-5A07-4BAA-9C6B-1DBF26121CC5-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.435475
+e418793401.045422
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDV.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m206"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9e966fb747f6b841^0aa10bb947f6b841^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m0000000000000000^3746"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o36"2BE6F8EA-C074-436F-84F6-BC1FD73A4C55-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.642098
+e418793400.849880
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m208"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4d81a4b847f6b841^d593d9b847f6b841^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m0000000000000000^3752"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o36"7FE70F88-6E09-42AF-A5CE-4BB321A50F03-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.348905
+e418793399.464877
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m196"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7a7259b747f6b841^ca4e77b747f6b841^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m0000000000000000^3716"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o36"57669C08-0013-441D-AF33-3D4CB380EF0B-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.286287
+e418793400.326991
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m210"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5e6949b847f6b841^f4c453b847f6b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m0000000000000000^3758"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o36"A5BA229E-EA8E-410C-9C5C-E078F3AA401C-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.265492
+e418793399.344517
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m198"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf9be44b747f6b841^a06e58b747f6b841^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m0000000000000000^3722"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o36"36135067-7B5E-458A-930F-BBF0F291146F-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.263317
+e418793399.346960
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m218"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9ad143b747f6b841^290559b747f6b841^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m0000000000000000^3782"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o36"63D7F628-D5FF-46F9-B095-DD4E42FE267D-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793399.347257
+e418793399.435256
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m230"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd80b59b747f6b841^6a686fb747f6b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m0000000000000000^3818"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o36"C1C09366-90BC-4E3B-B96C-236194EC579D-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793400.285898
+e418793400.506020
+r1
+xCompileC
+xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
+x/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m210"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7d5a49b847f6b841^fcc881b847f6b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m0000000000000000^3758"CompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG -include /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.d --serialize-diagnostics /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.dia -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m -o /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o36"53674CFA-622D-4FD8-BB50-368A0EC9CD99-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDV.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h
+s418793397.210760
+e418793397.212517
+r1
+xCpHeader
+xClasses/CDV.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h104"CpHeader Classes/CDV.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.he31b36b547f6b841^149836b547f6b841^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h003444f5dcffdf42^744"CpHeader Classes/CDV.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDV.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDV.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"96695F2B-F53F-40B4-A759-154F912FDBF4-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVAvailability.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+s418793397.212230
+e418793397.214039
+r1
+xCpHeader
+xClasses/CDVAvailability.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h128"CpHeader Classes/CDVAvailability.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.hed7d36b547f6b841^cced36b547f6b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h003444f5dcffdf42^780"CpHeader Classes/CDVAvailability.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"575AE562-CA80-4BB7-B879-E3FEDEEB4538-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVCommandDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+s418793397.210056
+e418793397.212072
+r1
+xCpHeader
+xClasses/CDVCommandDelegate.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h134"CpHeader Classes/CDVCommandDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.hc8eb35b547f6b841^248136b547f6b841^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h003444f5dcffdf42^789"CpHeader Classes/CDVCommandDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"65005394-E6FB-4152-AE2F-58E9D47CD187-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVCommandDelegateImpl.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+s418793397.214777
+e418793397.216530
+r1
+xCpHeader
+xClasses/CDVCommandDelegateImpl.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h142"CpHeader Classes/CDVCommandDelegateImpl.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.hc70d37b547f6b841^757537b547f6b841^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h003444f5dcffdf42^801"CpHeader Classes/CDVCommandDelegateImpl.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"E068CE17-74FC-4593-88E7-AB128DDAA072-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVCommandQueue.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+s418793397.214619
+e418793397.216550
+r1
+xCpHeader
+xClasses/CDVCommandQueue.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h128"CpHeader Classes/CDVCommandQueue.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h7f1637b547f6b841^308137b547f6b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h003444f5dcffdf42^780"CpHeader Classes/CDVCommandQueue.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"12C9B209-0F97-4090-9AB9-89693AE04234-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVConfigParser.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+s418793397.216674
+e418793397.217782
+r1
+xCpHeader
+xClasses/CDVConfigParser.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h128"CpHeader Classes/CDVConfigParser.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.hb39937b547f6b841^88d937b547f6b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h003444f5dcffdf42^780"CpHeader Classes/CDVConfigParser.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"F1F5A5D2-F57C-4C3B-98E4-855784D7462D-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVDebug.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+s418793397.207503
+e418793397.209684
+r1
+xCpHeader
+xClasses/CDVDebug.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h114"CpHeader Classes/CDVDebug.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h8b3435b547f6b841^1ea635b547f6b841^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h003444f5dcffdf42^759"CpHeader Classes/CDVDebug.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVDebug.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"F7EE7A34-ABD8-4252-A532-6BA234257BDC-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVInvokedUrlCommand.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+s418793397.204673
+e418793397.207056
+r1
+xCpHeader
+xClasses/CDVInvokedUrlCommand.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h138"CpHeader Classes/CDVInvokedUrlCommand.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h1b8134b547f6b841^591935b547f6b841^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h003444f5dcffdf42^795"CpHeader Classes/CDVInvokedUrlCommand.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"75666B0D-7178-4E7A-A2CC-F71688F0B757-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVJSON.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+s418793397.217204
+e418793397.218270
+r1
+xCpHeader
+xClasses/CDVJSON.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h112"CpHeader Classes/CDVJSON.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h60b037b547f6b841^a3ea37b547f6b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h003444f5dcffdf42^756"CpHeader Classes/CDVJSON.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVJSON.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"220ED0AD-D7C1-4578-B569-009D0275AC55-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVLocalStorage.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+s418793397.212552
+e418793397.214379
+r1
+xCpHeader
+xClasses/CDVLocalStorage.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h128"CpHeader Classes/CDVLocalStorage.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.he88236b547f6b841^df1b37b547f6b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h003444f5dcffdf42^780"CpHeader Classes/CDVLocalStorage.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"BBEC827E-2534-4611-B082-BE730530320B-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVPlugin.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+s418793397.207384
+e418793397.208798
+r1
+xCpHeader
+xClasses/CDVPlugin.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h116"CpHeader Classes/CDVPlugin.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h1b2f35b547f6b841^757735b547f6b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h003444f5dcffdf42^762"CpHeader Classes/CDVPlugin.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"B324780A-4174-4DAB-8799-8E247074EF7A-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVPluginResult.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+s418793397.205651
+e418793397.207068
+r1
+xCpHeader
+xClasses/CDVPluginResult.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h128"CpHeader Classes/CDVPluginResult.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.hb7b634b547f6b841^8e3f35b547f6b841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h003444f5dcffdf42^780"CpHeader Classes/CDVPluginResult.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"6C2103F2-F952-47CD-8F7F-A15E05094DD3-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+s418793397.215536
+e418793397.217089
+r1
+xCpHeader
+xClasses/CDVScreenOrientationDelegate.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h154"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.hd94337b547f6b841^93c337b547f6b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h003444f5dcffdf42^819"CpHeader Classes/CDVScreenOrientationDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"C8BE9268-4217-4B32-AAE9-EB6D9977E1BA-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVShared.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+s418793397.214959
+e418793397.216607
+r1
+xCpHeader
+xClasses/CDVShared.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h116"CpHeader Classes/CDVShared.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h193937b547f6b841^ad8737b547f6b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h003444f5dcffdf42^762"CpHeader Classes/CDVShared.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVShared.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"4E280050-C824-4B76-918B-C59CBE3F66D7-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVTimer.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+s418793397.219237
+e418793397.220206
+r1
+xCpHeader
+xClasses/CDVTimer.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h114"CpHeader Classes/CDVTimer.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.hc04038b547f6b841^ee6038b547f6b841^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h003444f5dcffdf42^759"CpHeader Classes/CDVTimer.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVTimer.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"188AE0B1-0ACC-4C84-9BE3-C7AF8B5BF691-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVURLProtocol.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+s418793397.209708
+e418793397.211850
+r1
+xCpHeader
+xClasses/CDVURLProtocol.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h126"CpHeader Classes/CDVURLProtocol.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h3dd535b547f6b841^c34936b547f6b841^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h003444f5dcffdf42^777"CpHeader Classes/CDVURLProtocol.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"FAA7F507-3C7C-4BDB-9038-3CAE808B2052-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVUserAgentUtil.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+s418793397.218123
+e418793397.219412
+r1
+xCpHeader
+xClasses/CDVUserAgentUtil.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h130"CpHeader Classes/CDVUserAgentUtil.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h7cf337b547f6b841^713b38b547f6b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h003444f5dcffdf42^783"CpHeader Classes/CDVUserAgentUtil.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"F0C585ED-AE69-413F-BB97-DD1B8FA3EFDD-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVViewController.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+s418793397.210079
+e418793397.212016
+r1
+xCpHeader
+xClasses/CDVViewController.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h132"CpHeader Classes/CDVViewController.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.ha5dc35b547f6b841^986a36b547f6b841^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h003444f5dcffdf42^786"CpHeader Classes/CDVViewController.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVViewController.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"E2EB1B1C-3EFB-45D1-B5A2-4351595BD90E-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVWebViewDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+s418793397.217698
+e418793397.218781
+r1
+xCpHeader
+xClasses/CDVWebViewDelegate.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h134"CpHeader Classes/CDVWebViewDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h62d637b547f6b841^5a0e38b547f6b841^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h003444f5dcffdf42^789"CpHeader Classes/CDVWebViewDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"9523553C-2D76-4CCD-9616-37D8BF7B660D-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/CDVWhitelist.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+s418793397.208356
+e418793397.209521
+r1
+xCpHeader
+xClasses/CDVWhitelist.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h122"CpHeader Classes/CDVWhitelist.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h3c6935b547f6b841^b4e835b547f6b841^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h003444f5dcffdf42^771"CpHeader Classes/CDVWhitelist.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"D014A866-DCFF-4D27-8064-662B42C68F8A-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/NSArray+Comparisons.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+s418793397.213006
+e418793397.214087
+r1
+xCpHeader
+xClasses/NSArray+Comparisons.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h136"CpHeader Classes/NSArray+Comparisons.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h569c36b547f6b841^250437b547f6b841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h003444f5dcffdf42^792"CpHeader Classes/NSArray+Comparisons.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"40C102F2-DCE5-4348-BC69-2089859B4535-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/NSData+Base64.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+s418793397.204812
+e418793397.207044
+r1
+xCpHeader
+xClasses/NSData+Base64.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h124"CpHeader Classes/NSData+Base64.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.he08634b547f6b841^dd2535b547f6b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h003444f5dcffdf42^774"CpHeader Classes/NSData+Base64.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"12C87499-9337-4555-9836-CBD5D108C4DC-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/NSDictionary+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+s418793397.204485
+e418793397.207036
+r1
+xCpHeader
+xClasses/NSDictionary+Extensions.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h144"CpHeader Classes/NSDictionary+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.hd47d34b547f6b841^9f0135b547f6b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h003444f5dcffdf42^804"CpHeader Classes/NSDictionary+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"3030FDB2-0F4F-4012-A06E-C25AB3808558-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+s418793397.207795
+e418793397.209286
+r1
+xCpHeader
+xClasses/NSMutableArray+QueueAdditions.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h156"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h3c4e35b547f6b841^70d135b547f6b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h003444f5dcffdf42^822"CpHeader Classes/NSMutableArray+QueueAdditions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"773A9F6A-5E99-4C09-8357-2FE93BE7CBFD-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CCpHeader Classes/UIDevice+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+s418793397.212558
+e418793397.214425
+r1
+xCpHeader
+xClasses/UIDevice+Extensions.h
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h136"CpHeader Classes/UIDevice+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.hd49a36b547f6b841^a30637b547f6b841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h003444f5dcffdf42^792"CpHeader Classes/UIDevice+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include/Cordova36"EAF95D66-E87A-4BFE-A882-20602C46FFF7-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CLibtool /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a normal i386
+s418793401.046888
+e418793401.059357
+r1
+xLibtool
+x/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Libtool /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a normal i38692"Libtool /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a normal i3864d110cb947f6b841^be320fb947f6b841^---0#0#1#--1074"Libtool /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a normal i386    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export IPHONEOS_DEPLOYMENT_TARGET=5.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -filelist /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList -o /Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/libCordova.a36"C64C6181-9961-4008-ACAE-6C063AA18672-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
+CProcessPCH /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418793397.220935
+e418793399.188477
+r1
+xProcessPCH
+x/var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch
+xCordovaLib_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile CordovaLib_Prefix.pch289"ProcessPCH /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2fa738b547f6b841^074030b747f6b841^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/CordovaLib_Prefix.pch0000000000000000^3725"ProcessPCH /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/srgruber/SJSULibraryApp/platforms/ios/build/emulator -DDEBUG --serialize-diagnostics /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.d -c /Users/srgruber/SJSULibraryApp/platforms/ios/CordovaLib/CordovaLib_Prefix.pch -o /var/folders/gy/389dlgsx3q701tp4k712drdm0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-ecodlfhvstnbaifmefxmwqsttgne/CordovaLib_Prefix.pch.pch36"DD642D2F-4D87-412E-9809-4A0F1E5A0BFB-
+b92C14978-C73D-449F-8F56-DFD5E234FBB7
+
