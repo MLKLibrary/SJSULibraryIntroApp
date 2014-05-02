@@ -1,0 +1,2043 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+	    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      #panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+    </style>
+	<title>SJSU Library</title>
+
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height initial-scale=1"> 
+   
+   
+  <link rel=stylesheet href="css/jquery.mobile-1.4.2.css" />
+  <link rel=stylesheet href="css/core.css" />
+  <link rel=stylesheet href="css/index.css" />
+  <link rel=stylesheet href="css/jquery.mobile-1.4.2.css" />
+  <link rel=stylesheet href="css/jquery.mobile.custom.structure.css" />
+  <link rel=stylesheet href="css/jquery.mobile.custom.theme.css" />
+  <link rel=stylesheet href="css/jquery.mobile.icons.min.css" />
+  <link rel=stylesheet href="css/SJSULibraryApp.css" />
+  <link rel=stylesheet href="css/SJSULibraryApp.min.css" />
+  
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/bookNumberIndex.js"></script>
+  <script src="js/jquery.mobile-1.4.2.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.mobile.custom.js"></script>
+  <!-- END OF JQM -->
+  
+  <!-- Google Api V3 Declaration -->    
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <script src="js/jMonthCalendar.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    
+  <link rel=stylesheet href="core.css" />
+  <!-- End of Google Api V3 Declaration -->  
+
+  <script>
+  var imageDir = '/images/mapoverlays/';
+  var lastFloor = ''+(-1);
+  var historicalOverlay;
+  var map;
+  var mapLoaded = false;
+  var prevCenter = null;
+  var infoWindow = new google.maps.InfoWindow({});
+  var markers = [];
+  var imageBounds = new google.maps.LatLngBounds(new google.maps.LatLng(37.334847, -121.886208),new google.maps.LatLng(37.336027, -121.883861)  );
+  var mlkLibraryGPSCoord = new google.maps.LatLng(37.335438, -121.885036);
+  allMainPageItems = [
+  //ll
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885356", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'},
+  {x: "37.335431", y: "-121.884799", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'SJSU Spartan Collaboration Study Room L67'+
+        '</div>'},
+  	  {x: "37.335776", y: "-121.885040", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L02'+
+        '</div>'},
+  	  {x: "37.335776", y: "-121.885040", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L02'+
+        '</div>'},
+  	  {x: "37.335801", y: "-121.885079", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L04'+
+        '</div>'}
+
+  ]},
+  //M
+  {children: [{x: "37.335712", y: "-121.885180", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //1st
+  {children: [{x: "37.335360", y: "-121.885028", 	
+  contentString:'<div id="content">' +
+                  '<div><h2 id="firstHeading" style="color:Grey;">Circulation Desk</h2>' +
+                  '<div id="bodyContent">' +
+                  "<div><img src='images/photos/CircDesk-small.jpg' height='100' width='100' align='left'>" +
+                  '<p style="color:Grey;">Check out materials or get help with your library account.</p></div>' +
+                  '</div>' +
+                  '</div>'},
+  {x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885350", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 3)"+
+        '</div>'},
+  	  {x: "37.335775", y: "-121.884975", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 3)"+
+        '</div>'},
+  	  {x: "37.335480", y: "-121.884662", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (3 of 3)"+
+        '</div>'}
+  ]},
+  //2nd
+  {children: [{x: "37.335538", y: "-121.885172", 	
+  contentString:'<div id="content">' +
+                                 '<div><h2 id="firstHeading" style="color:Grey;">Reference Desk</h2>' +
+                                 '<a href="#">Learn More</a>' +
+                                 '<p style="color:Grey;"><b>10 am - 8 pm</p></b>' +
+                                 '</div>' +
+                                 '<div id="bodyContent">' +
+                                 "<div><img src='images/photod/RefDesk-small.jpg' height='100' width='100' align='left'>" +
+                                 '<p style="color:Grey;">Get help with your research needs.</p></div>' +
+                                 '</div>' +
+                                 '</div>'},
+  {x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 2)"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885354", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 2)"+
+        '</div>'},
+  {x: "37.335713", y: "-121.885141", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 226'+
+        '</div>'},
+  	  {x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 224'+
+        '</div>'}
+  ]},
+  //3rd
+  {children: [{x: "37.335538", y: "-121.885172", 
+  	contentString:'<div id="content">' +
+                                 '<div><h2 id="firstHeading" style="color:Grey;">Reference Desk</h2>' +
+                                 '<a href="#">Learn More</a>' +
+                                 '<p style="color:Grey;"><b>10 am - 8 pm</p></b>' +
+                                 '</div>' +
+                                 '<div id="bodyContent">' +
+                                 "<div><img src='./images/refDesk.jpg' height='100' width='100' align='left'>" +
+                                 '<p style="color:Grey;">Get help with your research needs.</p></div>' +
+                                 '</div>' +
+                                 '</div>'},
+  {x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 2)"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885354", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 2)"+
+        '</div>'},
+  {x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 322, 324, 326'+
+        '</div>'},
+  	
+  	  {x: "37.335375", y: "-121.885291",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 390, 392'+
+        '</div>'}
+
+  ]},
+  //4
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+
+  ]},
+  //5
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+
+  ]},
+  //6
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'},
+  {x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'},
+  	  {x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'}
+  ]},
+  //7
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'},
+  {x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'},
+  	  {x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'}
+  ]},
+  //8
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'},
+  {x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'},
+  {x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'},
+  	  {x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'}
+  ]}
+  ];
+  function initialize() {
+  /*top : 37.336030, -121.885133 ... max first, 
+  left : 37.335486, -121.886340 ... 
+  bottom : 37.334880, -121.885057
+  right : 37.33526, -121.883766
+
+  https://www.google.com/maps/place/150+E+San+Fernando+St/@37.3354297,-121.8849654,20z/data=!3m1!5s0x808fccbbfc7cec57:0x74d9a902a9bfc6d0!4m2!3m1!1s0x808fccbbfc717863:0xbcd7b643f13145d5
+
+  new top right: 37.336027, -121.883861
+
+
+  new coords:
+  center: 37.33552630743207, -121.88498558035661
+  tg: -121.88627304068376, -121.88369812002946
+  ta: 37.33610211206025, 37.334950498389865, 
+
+  */
+    prevCenter = mlkLibraryGPSCoord;
+    
+
+    var mapOptions = {
+      zoom: 20,
+      center: mlkLibraryGPSCoord
+    };
+
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+  	  var wHeight = $(document).height();
+  	var mapHeight = wHeight - $('#header').height() - $('#footer').height()-36;
+  	  $("#map-canvas").css("height", mapHeight);
+  google.maps.event.trigger(map, "resize");
+
+
+  google.maps.event.addListener(map,'dragend',function(event) {
+          prevCenter = map.center;
+  		if(!imageBounds.contains(map.center))
+  		map.panToBounds(imageBounds);
+      
+      });
+  	google.maps.event.addListener(map,'center_changed',function(event) {
+          if(!imageBounds.contains(map.center))
+  		map.panToBounds(imageBounds);
+      });
+  function AlertPos (map, location) {
+
+     
+  	
+  }
+    historicalOverlay = new google.maps.GroundOverlay(
+        imageDir + '1-new.PNG',
+        imageBounds);
+
+    addOverlay();
+  }
+
+  function addOverlay() {
+      historicalOverlay.setMap(map);
+  }
+
+  function removeOverlay() {
+    historicalOverlay.setMap(null);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  function showCirculationDesk(floorNumber){
+  circulationDesk = [
+  //1st
+  {children: [{x: "37.335360", y: "-121.885028", 	
+  contentString:'<div id="content">' +
+                  '<div><h2 id="firstHeading" style="color:Grey;">Circulation Desk</h2>' +
+                  '<a href="#">Learn More</a>' +
+                  '<p style="color:Grey;"><b>10 am - 8 pm</p></b>' +
+                  '</div>' +
+                  '<div id="bodyContent">' +
+                  "<div><img src='./images/circDesk.jpg' height='100' width='100' align='left'>" +
+                  '<p style="color:Grey;">Check out materials or get help with your library account.</p></div>' +
+                  '</div>' +
+                  '</div>'}
+  ]}
+  ];
+  	  historicalOverlay = new google.maps.GroundOverlay(
+        (floorNumber)+ imageDir + '-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  floorNumber--;
+  	  console.log(circulationDesk);
+  try{	      
+  		  for(var i = 0; i < circulationDesk[floorNumber].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(circulationDesk[floorNumber].children[i].x, circulationDesk[floorNumber].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: circulationDesk[floorNumber].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  }catch(e){}
+  }
+  function timer(floorNum) {
+
+  if(lastFloor !== floorNum && $('#slider-main').val().toLowerCase() === floorNum){
+  clearMap();
+  if(floorNum === 'll')
+  showFloor('0');
+  else
+  showFloor(floorNum);
+  }
+  }
+  function initializeSlider() {
+  var floors = {
+  	10 : "LL",
+  	11 : "M",
+  	12 : "1",
+  	13 : "2",
+  	14 : "3",
+  	15 : "4",
+  	16 : "5",
+  	17 : "6",
+  	18 : "7",
+  	19 : "8"
+  };
+  $('#slider-main').min = 10;
+  $('#slider-main').max = 19;
+  $('#slider-main').val("1");
+
+  $('#slider-main').bind("change", function(event, ui) {
+
+  if(parseInt(''+event.target.value) >= 10 && parseInt(''+event.target.value) <= 19)
+  $('#slider-main').val(floors[event.target.value]);
+
+  if(event.target.value.toLowerCase() === 'm') {
+  var num = 'm';
+  setTimeout(function(){timer(num)}, 100);
+  }
+
+  else if(event.target.value.toLowerCase() === 'll' || event.target.value.toLowerCase() === 'l') {
+
+  var num = 'll';
+  setTimeout(function(){timer(num)}, 100);
+  }
+  else if(parseInt(''+event.target.value) >= 0 )
+  {
+  var num = ''+parseInt(''+event.target.value);
+  setTimeout(function(){timer(num)}, 100);
+  }
+  });
+  $('#slider-main').slider({
+  	value: 2,
+  	min: 0,
+  	max: 9,
+  	step: 1,
+  	slide: function(event, ui){
+  	console.log("slide");
+  	//showFloor(floors[ui.value]);
+  	}
+  	});
+  }
+  function showFloor(floorNumber){
+  try {
+  if(floorNumber == 0){
+  historicalOverlay = new google.maps.GroundOverlay(
+        imageDir + 'll-new.PNG',
+        imageBounds);
+  	  lastFloor = 'll';
+  	  historicalOverlay.setMap(map);
+  	  }
+  	  else if(floorNumber === "m"){
+  	  historicalOverlay = new google.maps.GroundOverlay(
+  	   imageDir + 'm-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  floorNumber = 1;
+  	  lastFloor = 'm';
+  	  }
+  	  else
+  	  {
+  	  historicalOverlay = new google.maps.GroundOverlay(
+        (floorNumber)+  imageDir + '-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  	  lastFloor = ''+floorNumber;
+  	  floorNumber++;
+  	  }
+  try{	      
+  		  for(var i = 0; i < allMainPageItems[floorNumber].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(allMainPageItems[floorNumber].children[i].x, allMainPageItems[floorNumber].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: allMainPageItems[floorNumber].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  }catch(e){console.log(e);}
+  }catch(e){console.log(e);}
+
+  }
+
+  function showReferenceDesk(floorNumber){
+  referenceDesk = [
+  //2nd
+  {children: [{x: "37.335538", y: "-121.885172", 	
+  contentString:'<div id="content">' +
+                                 '<div><h2 id="firstHeading" style="color:Grey;">Reference Desk</h2>' +
+                                 '<a href="#">Find on Website</a>' +
+                                 '<p style="color:Grey;"><b>10 am - 8 pm</p></b>' +
+                                 '</div>' +
+                                 '<div id="bodyContent">' +
+                                 "<div><img src='./images/refDesk.jpg' height='100' width='100' align='left'>" +
+                                 '<p style="color:Grey;">Get help with your research needs.</p></div>' +
+                                 '</div>' +
+                                 '</div>'}
+
+  ]},
+  //3rd
+  {children: [{x: "37.335538", y: "-121.885172", 
+  	contentString:'<div id="content">' +
+                                 '<div><h2 id="firstHeading" style="color:Grey;">Reference Desk</h2>' +
+                                 '<a href="#">Find on Website</a>' +
+                                 '<p style="color:Grey;"><b>10 am - 8 pm</p></b>' +
+                                 '</div>' +
+                                 '<div id="bodyContent">' +
+                                 "<div><img src='./images/refDesk.jpg' height='100' width='100' align='left'>" +
+                                 '<p style="color:Grey;">Get help with your research needs.</p></div>' +
+                                 '</div>' +
+                                 '</div>'}
+
+  ]}
+  ]
+
+  console.log(floorNumber);
+  	  historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + (floorNumber)+'-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  floorNumber -= 2;
+  	  
+  try{	      
+  		  for(var i = 0; i < referenceDesk[floorNumber].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(referenceDesk[floorNumber].children[i].x, referenceDesk[floorNumber].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: referenceDesk[floorNumber].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  }catch(e){}
+  }
+  function showElevators(floorNumber){
+  elevators = [
+  //ll
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //M
+  {children: [{x: "37.335712", y: "-121.885180", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //1
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //2
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //3
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //4
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //5
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //6
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //7
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]},
+  //8
+  {children: [{x: "37.335531", y: "-121.884836", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Elevator"+
+        '</div>'}
+
+  ]}
+  ]
+  if(floorNumber == 0){
+  historicalOverlay = new google.maps.GroundOverlay(
+        imageDir + 'll-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  }
+  	  else if(floorNumber === "m"){
+  	  historicalOverlay = new google.maps.GroundOverlay(
+  	   imageDir + 'm-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  floorNumber = 1;
+  	  }
+  	  else
+  	  {
+  	  historicalOverlay = new google.maps.GroundOverlay(
+        (floorNumber)+ imageDir + '-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  floorNumber++;
+  	  }
+  try{	      
+  		  for(var i = 0; i < elevators[floorNumber].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(elevators[floorNumber].children[i].x, elevators[floorNumber].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: elevators[floorNumber].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  }catch(e){}
+  }
+  function showBathrooms(floorNumber) {
+  bathRooms = [
+  //ll
+  {children: [{x: "37.335462", y: "-121.885356", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]},
+  //1st
+  {children: [{x: "37.335462", y: "-121.885350", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 3)"+
+        '</div>'},
+  	  {x: "37.335775", y: "-121.884975", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 3)"+
+        '</div>'},
+  	  {x: "37.335480", y: "-121.884662", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (3 of 3)"+
+        '</div>'}
+  ]},
+  //2nd
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 2)"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885354", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 2)"+
+        '</div>'}
+  ]},
+  //3rd
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (1 of 2)"+
+        '</div>'},
+  {x: "37.335462", y: "-121.885354", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms (2 of 2)"+
+        '</div>'}
+  ]},
+  //4th
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]},
+  //5th
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]},
+  //6th
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]},
+  //7th
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]},
+  //8th
+  {children: [{x: "37.335486", y: "-121.884657", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        "Men's & Women's Bathrooms"+
+        '</div>'}
+  ]}
+  ]
+  if(floorNumber == 0){
+  historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + 'll-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  }
+  	  else
+  	  {
+  	  historicalOverlay = new google.maps.GroundOverlay(
+        (floorNumber)+ imageDir + '-new.PNG',
+        imageBounds);
+  	  historicalOverlay.setMap(map);
+  	  }
+  try{	      
+  		  for(var i = 0; i < bathRooms[floorNumber].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(bathRooms[floorNumber].children[i].x, bathRooms[floorNumber].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: bathRooms[floorNumber].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  }catch(e){}
+  }
+  function showStudyRooms(floorNumber) {
+  studyRooms = [
+  //ll
+  {children: [{x: "37.335431", y: "-121.884799", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'SJSU Spartan Collaboration Study Room L67'+
+        '</div>'},
+  	  {x: "37.335776", y: "-121.885040", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L02'+
+        '</div>'},
+  	  {x: "37.335776", y: "-121.885040", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L02'+
+        '</div>'},
+  	  {x: "37.335801", y: "-121.885079", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L04'+
+        '</div>'}
+  ]},
+  //2nd
+  {children: [{x: "37.335713", y: "-121.885141", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 226'+
+        '</div>'},
+  	  {x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 224'+
+        '</div>'}
+  ]},
+  //3rd
+  {children: [
+  {x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 322, 324, 326'+
+        '</div>'},
+  	
+  	  {x: "37.335375", y: "-121.885291",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 390, 392'+
+        '</div>'}
+  ]},
+  //6th
+  {children: [{x: "37.335723", y
+
+  : "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'},
+  	  {x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'}
+  ]},
+  //7th
+  {children: [{x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'},
+  	  {x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'}
+  ]},
+  //8th
+  {children: [{x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'},
+  	  {x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'}
+  ]}
+
+  ]
+  switch(floorNumber) {
+  	case 0: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + 'll-new.PNG',
+        imageBounds);
+  	      historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[0].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[0].children[i].x, studyRooms[0].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[0].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  	  }break;
+  	  case 2: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + '2-new.PNG',
+        imageBounds);
+  historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[1].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[1].children[i].x, studyRooms[1].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[1].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}	  }break;
+  	  case 3: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + '3-new.PNG',
+        imageBounds);
+  historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[1].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[2].children[i].x, studyRooms[2].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[2].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  }
+  	  }break;
+  	  case 6: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + '6-new.PNG',
+        imageBounds);
+  historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[3].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[3].children[i].x, studyRooms[3].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[3].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  }
+  	  }break;
+  	  case 7: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + '7-new.PNG',
+        imageBounds);
+  historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[4].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[4].children[i].x, studyRooms[4].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[4].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  }
+  	  }break;
+  	  case 8: {historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + '8-new.PNG',
+        imageBounds);
+  historicalOverlay.setMap(map);
+  		  for(var i = 0; i < studyRooms[5].children.length; i++) {
+  		  
+  		  var marker =     new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(studyRooms[5].children[i].x, studyRooms[5].children[i].y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: studyRooms[5].children[i].contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  }	  }break;
+  	  }
+  }
+
+  function showLocation(type){
+      var pinInfo = bookNumberIndex[type];
+      historicalOverlay = new google.maps.GroundOverlay(
+        (pinInfo.floor)+ imageDir + '-new.PNG',
+        imageBounds);
+        $.mobile.changePage( "#home", { transition: "slideup"} );
+        clearMap();
+  	  historicalOverlay.setMap(map);
+  	  $('#slider-main').val(String(pinInfo.floor));
+  	  var infowindow = new google.maps.InfoWindow({
+        content: pinInfo.contentString,
+        maxWidth: 200
+          });
+  	  var newMarker = new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(pinInfo.lat, pinInfo.long),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+        google.maps.event.addListener(newMarker, 'click', function() {
+              infowindow.open(map, newMarker);
+         });
+         markers.push(newMarker);
+  }
+
+  function studyRoomByNumber(roomString) {
+  studyRooms = {};
+  studyRooms["L67"] = {x: "37.335431", y: "-121.884799", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'SJSU Spartan Collaboration Study Room L67'+
+        '</div>'};
+  studyRooms["L02"] ={x: "37.335776", y: "-121.885040", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L02'+
+        '</div>'};
+  studyRooms["L04"] =	  {x: "37.335801", y: "-121.885079", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room L04'+
+        '</div>'};
+  studyRooms["226"] =	{x: "37.335713", y: "-121.885141", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 226'+
+        '</div>'};
+  studyRooms["224"] =	{x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 224'+
+        '</div>'};
+  studyRooms["322"] ={x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 322, 324, 326'+
+        '</div>'};
+  studyRooms["324"] ={x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 322, 324, 326'+
+        '</div>'};
+  studyRooms["326"] ={x: "37.335684", y: "-121.885109",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 322, 324, 326'+
+        '</div>'};
+
+  studyRooms["390"] ={x: "37.335375", y: "-121.885291",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 390, 392'+
+        '</div>'};
+  studyRooms["392"] ={x: "37.335375", y: "-121.885291",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 390, 392'+
+        '</div>'};
+  studyRooms["602"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+  studyRooms["604"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+  studyRooms["606"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+  studyRooms["622"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+  studyRooms["624"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+  studyRooms["626"] ={x: "37.335723", y: "-121.885126", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 602, 604, 606, 622, 624, 626'+
+        '</div>'};
+
+  studyRooms["632"] ={x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'};
+  studyRooms["634"] ={x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'};
+  studyRooms["662"] ={x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'};
+  studyRooms["664"] ={x: "37.335429", y: "-121.885341",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 632, 634, 662, 664'+
+        '</div>'};
+  studyRooms["702"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+  studyRooms["704"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+  studyRooms["706"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+  studyRooms["722"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+  studyRooms["724"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+  studyRooms["726"] ={x: "37.335720", y: "-121.885073", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 702, 704, 706, 722, 724, 726'+
+        '</div>'};
+
+  studyRooms["732"] ={x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'};
+  studyRooms["734"] ={x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'};
+  studyRooms["762"] ={x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'};
+  studyRooms["764"] ={x: "37.335400", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 732, 734, 762, 764'+
+        '</div>'};
+
+  studyRooms["802"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+  studyRooms["804"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+  studyRooms["806"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+  studyRooms["822"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+  studyRooms["824"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+  studyRooms["826"] ={x: "37.335720", y: "-121.885069", 
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 802, 804, 806, 822, 824, 826'+
+        '</div>'};
+
+  studyRooms["832"] ={x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'};
+  studyRooms["834"] ={x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'};
+  studyRooms["862"] ={x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'};
+  studyRooms["864"] ={x: "37.335397", y: "-121.885358",
+  	contentString:'<div id="content" style="color:black;font-family:verdana;">'+
+        'Study Room 832, 834, 862, 864'+
+        '</div>'};
+
+  if(roomString.charAt(0) === 'L')
+  {
+  historicalOverlay = new google.maps.GroundOverlay(
+         imageDir + 'll-new.PNG',imageBounds);
+  	  	      historicalOverlay.setMap(map);
+  }
+  else if(roomString.charAt(0) === '2' ||roomString.charAt(0) === '3' ||roomString.charAt(0) === '6' ||roomString.charAt(0) === '7' ||roomString.charAt(0) === '8'){
+  historicalOverlay = new google.maps.GroundOverlay(
+        roomString.charAt(0)+ imageDir + '-new.PNG',imageBounds);
+  	  	      historicalOverlay.setMap(map);
+  }
+  else
+  {
+  console.log("error");
+  return "error";
+  }
+
+        try{
+  	  var myRoom = studyRooms[roomString];
+  		  var marker = new google.maps.Marker({animation: google.maps.Animation.DROP,
+  		  position : new google.maps.LatLng(myRoom.x, myRoom.y),
+  		  title : "marker",
+  		  map: map,
+  		  draggable: false
+  		  });
+  		  marker['infoWindow'] = new google.maps.InfoWindow({
+  		  content: myRoom.contentString,
+  		  maxWidth: 200
+  		  });
+  		  google.maps.event.addListener(marker, 'click', function() {
+  		  try {
+  		  for(var b = 0; b < markers.length; b++) {
+  		  var currentMarker = markers[i];
+  		  currentMarker["infoWindow"].close();
+  		  }} catch(e){}
+  			this['infoWindow'].open(map,this);
+  			});
+  		markers.push(marker);
+  		}
+  		catch(e) {
+  		console.log("error 2");
+  		return "error";
+  		}
+  }
+
+  function clearMap() {
+  removeOverlay();
+  for(var i = 0; i < markers.length; i++) {
+  markers[i].setMap(null);
+  try{
+  markers[i]['infoWindow'].close();
+  }catch(e){}
+  }
+  markers.length=0;
+  }
+  $(window).resize(function() {
+  map.setCenter(prevCenter);
+  	var wHeight = $(window).height();
+  	var mapHeight = wHeight - $('#header').height() - $('#footer').height()-36;
+  	console.log(mapHeight);
+  	$('#map-canvas').css('height', mapHeight);
+  	google.maps.event.trigger(map, "resize");
+
+  });
+  function showPopup()
+  {
+  	$('#myPopup').popup();
+  	$('#myPopup').popup("open");
+  }
+  </script>
+</head>
+
+<body onload="showFloor(1);initializeSlider();showPopup();">
+  <div data-role="popup"  data-theme="a" id="myPopup" class="ui-content">   
+    <p><img src="images/pin.jpg" height="16"/>&nbsp;&nbsp;Tap on a pin to find King services and locations</p>  
+	</div>
+
+  <!--Home-->    
+  <div data-role="page" data-theme="b" id="home">
+	 
+    <div data-role="header" id="header">
+	   <a href="#" data-icon="refresh" onclick="location.reload();"></a>
+      <h1>SJSU Library</h1>
+      <input type="string" data-type="range" data-theme="a" name="slider-2" id="slider-main" data-highlight="true" min="10" max="19" value="12" class="ui-shadow-inset ui-body-inherit ui-corner-all ui-slider-input">
+    </div>
+        
+    <div data-role="content">
+		  <div id="map-canvas">
+      </div>
+    </div>
+    
+    <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+        <div class="ui-grid-d center" data-role="navbar">
+		      <div class="ui-grid-d center" data-role="navbar">
+            <ul>
+                <li><a href="#findBooks">Find Books</a>
+                </li>
+                <li><a href="#findStudyRoomByNumber">Find Study Room</a>
+                </li>
+            </ul>
+          </div>
+
+            <ul>
+                <li><a href="#mainMenu" data-icon="bars">Menu</a>
+                </li>
+                <li><a href="#win1" data-icon="calendar">Events</a>
+                </li>
+                <li><a href="#home" data-icon="home">Home</a>
+                </li>
+                <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+                </li>
+                <li><a href="#help" data-icon="info">Help</a>
+                </li>
+            </ul>
+
+        </div>
+   </div>
+  </div>
+
+  <!--studyRooms-->
+  <div data-role="page" id="studyRooms" data-theme="a" data-url="two">
+
+	 <div data-role="header">
+	   <a href="#home" data-icon="back">Back</a>
+		  <h1>Main Menu</h1>
+	 </div><!-- /header -->
+
+   <div data-role="content">	
+     <div role="main" class="ui-content">
+      <ul data-role="listview" data-theme="b" data-filter="true" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <li class="ui-first-child">
+          <a href="#studyRooms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Study Rooms</a>
+        </li>
+        <li><a href="#circulationDesk" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Circulation Desk</a>
+        </li>
+        <li><a href="#referenceDesk" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Reference Desk (open hours)</a>
+        </li>
+        <li><a href="#bathRooms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Restrooms</a>
+        </li>
+        <li class="ui-last-child">
+          <a href="#elevators" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Elevators</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+        <li><a href="#mainMenu" data-icon="bars">Menu</a>
+        </li>
+        <li><a href="#win1" data-icon="calendar">Events</a>
+        </li>
+        <li><a href="#home" data-icon="home">Home</a>
+        </li>
+        <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+        </li>
+        <li><a href="#help" data-icon="info">Help</a>
+        </li>
+      </ul>
+    </div>	
+  </div>
+
+</div>
+
+<!--mainMenu-->
+<div data-role="page" id="mainMenu" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#home" data-icon="back">Back</a>
+		<h1>Main Menu</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	 <div role="main" class="ui-content">
+	   <ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+				<li class="ui-first-child">
+				<a href="#studyRooms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Study Rooms</a>
+        </li>
+				<li><a href="#circulationDesk" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Circulation Desk</a>
+        </li>
+				<li><a href="#referenceDesk" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Reference Desk (open hours)</a>
+        </li>
+				<li><a href="#bathRooms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Restrooms</a>
+        </li>
+				<li class="ui-last-child">
+				<a href="#elevators" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Elevators</a>
+        </li>
+			</ul>
+    </div>	
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+        <li><a href="#mainMenu" data-icon="bars">Menu</a>
+        </li>
+        <li><a href="#win1" data-icon="calendar">Events</a>
+        </li>
+        <li><a href="#home" data-icon="home">Home</a>
+        </li>
+        <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+        </li>
+        <li><a href="#help" data-icon="info">Help</a>
+        </li>
+      </ul>
+    </div>
+	</div>
+
+</div><!--/mainMenu-->
+
+<!--StudyRooms by number-->
+<div data-role="page" id="findStudyRoomByNumber" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#home" data-icon="back">Back</a>
+	 <h1>Circulation Desk</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	 <ul data-role="listview" data-theme="a" data-filter="true" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+				
+				<li class="ui-first-child ui-last-child">
+				<a href="#home" onclick="javascript:clearMap();studyRoomByNumber('L02');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">L02</a></li>
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('L04');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">L04</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('L67');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">L67</a></li>
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('224');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">224</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('226');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">226</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('322');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">322</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('324');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">324</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('326');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">326</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('390');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">390</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('392');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">392</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('602');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">602</a></li>
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('604');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">604</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('606');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">606</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('622');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">622</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('624');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">624</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('626');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">626</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('632');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">632</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('634');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">634</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('662');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">662</a></li>
+				
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('664');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">664</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('702');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">702</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('704');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">704</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('706');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">706</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('722');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">722</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('724');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">724</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('726');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">726</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('732');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">732</a></li>
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('734');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">734</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('762');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">762</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('764');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">764</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('802');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">802</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('804');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">804</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('806');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">806</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('822');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">822</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('824');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">824</a></li>
+				
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('826');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">826</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('832');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">832</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('834');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">834</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('862');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">862</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();studyRoomByNumber('864');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">864</a></li>
+
+			</ul>
+			
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+        <li><a href="#mainMenu" data-icon="bars">Menu</a>
+        </li>
+        <li><a href="#win1" data-icon="calendar">Events</a>
+        </li>
+        <li><a href="#home" data-icon="home">Home</a>
+        </li>
+        <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+        </li>
+        <li><a href="#help" data-icon="info">Help</a>
+        </li>
+      </ul>
+    </div>
+	</div>
+
+</div><!--studyrooms by number-->
+
+<!--Circulation Desk-->
+<div data-role="page" id="circulationDesk" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#mainMenu" data-icon="back">Back</a>
+	 <h1>Circulation Desk</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	 <ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			<li class="ui-first-child">
+			<a href="#home" onclick="javascript:clearMap();showCirculationDesk(1);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">1st Floor</a>
+      </li>
+	 </ul>
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+        <ul>
+          <li><a href="#mainMenu" data-icon="bars">Menu</a>
+          </li>
+          <li><a href="#win1" data-icon="calendar">Events</a>
+          </li>
+          <li><a href="#home" data-icon="home">Home</a>
+          </li>
+          <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+          </li>
+          <li><a href="#help" data-icon="info">Help</a>
+          </li>
+        </ul>
+    </div>
+	</div>
+
+</div><!--/CircDesk-->
+
+<!--RefDesk-->
+<div data-role="page" id="referenceDesk" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#home" data-icon="back">Back</a>
+	 <h1>Reference Desk</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+    <ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+      <li class="ui-first-child">
+       <a href="#home" onclick="javascript:clearMap();showReferenceDesk(2);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">2nd Floor</a>
+      </li>
+      <li class="ui-last-child">
+      <a href="#home" onclick="javascript:clearMap();showReferenceDesk(3);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">3rd Floor</a></li>
+    </ul>
+			
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+        <li><a href="#mainMenu" data-icon="bars">Menu</a>
+        </li>
+        <li><a href="#win1" data-icon="calendar">Events</a>
+        </li>
+        <li><a href="#home" data-icon="home">Home</a>
+        </li>
+        <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+        </li>
+        <li><a href="#help" data-icon="info">Help</a>
+        </li>
+      </ul>
+    </div>
+	</div>
+
+</div><!--/RefDesk-->
+
+<!--Elevators-->
+<div data-role="page" id="elevators" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	<a href="#mainMenu" data-icon="back">Back</a>
+		<h1>RestRooms</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	<ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+				<li class="ui-first-child">
+				<a href="#home" onclick="javascript:clearMap();showElevators(0);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Lower Level</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(1);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">1st Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators('m');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">M Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(2);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">2nd Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(3);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">3rd Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(4);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">4th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(5);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">5th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(6);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">6th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showElevators(7);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">7th Floor</a></li>
+				<li class="ui-last-child">
+				<a href="#home" onclick="javascript:clearMap();showElevators(8);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">8th Floor</a></li>
+			</ul>
+			
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">  
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+        <li><a href="#mainMenu" data-icon="bars">Menu</a>
+        </li>
+        <li><a href="#win1" data-icon="calendar">Events</a>
+        </li>
+        <li><a href="#home" data-icon="home">Home</a>
+        </li>
+        <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+        </li>
+        <li><a href="#help" data-icon="info">Help</a>
+        </li>
+      </ul>
+    </div>
+	</div>
+
+</div><!--/elevators-->
+
+<!--Restrooms-->
+<div data-role="page" id="bathRooms" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#mainMenu" data-icon="back">Back</a>
+		<h1>RestRooms</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	   <ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+				<li class="ui-first-child">
+				<a href="#home" onclick="javascript:clearMap();showBathrooms(0);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Lower Level</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(1);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">1st Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(2);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">2nd Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(3);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">3rd Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(4);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">4th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(5);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">5th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(6);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">6th Floor</a></li>
+				<li><a href="#home" onclick="javascript:clearMap();showBathrooms(7);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">7th Floor</a></li>
+				<li class="ui-last-child">
+				<a href="#home" onclick="javascript:clearMap();showBathrooms(8);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">8th Floor</a></li>
+			</ul>			
+	</div><!-- /content -->
+  
+  <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+    <div class="ui-grid-d center" data-role="navbar">
+      <ul>
+          <li><a href="#mainMenu" data-icon="bars">Menu</a>
+          </li>
+          <li><a href="#win1" data-icon="calendar">Events</a>
+          </li>
+          <li><a href="#home" data-icon="home">Home</a>
+          </li>
+          <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+          </li>
+          <li><a href="#help" data-icon="info">Help</a>
+          </li>
+      </ul>
+    </div>	
+  </div>
+
+</div>
+
+<!--StudyRooms-->
+<div data-role="page" id="studyRooms" data-theme="b" data-url="two">
+
+	<div data-role="header">
+	 <a href="#mainMenu" data-icon="back">Back</a>
+	 <h1>Study Rooms</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	   <ul data-role="listview" data-theme="a" data-filter="false" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+  			<li class="ui-first-child">
+  				<a href="#home" onclick="javascript:clearMap();showStudyRooms(0);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Lower Level</a>
+        </li>
+  			<li><a href="#home" onclick="javascript:clearMap();showStudyRooms(2);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">2nd Floor</a>
+        </li>
+  			<li><a href="#home" onclick="javascript:clearMap();showStudyRooms(3);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">3rd Floor</a>
+        </li>
+  			<li><a href="#home" onclick="javascript:clearMap();showStudyRooms(6);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">6th Floor</a>
+        </li>
+  			<li><a href="#home" onclick="javascript:clearMap();showStudyRooms(7);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">7th Floor</a>
+        </li>	
+  			<li class="ui-last-child">
+  			<a href="#home" onclick="javascript:clearMap();showStudyRooms(8);" class="ui-btn ui-btn-icon-right ui-icon-carat-r">8th Floor</a>
+        </li>
+		</ul>
+	</div><!-- /content -->
+  
+    <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+        <div class="ui-grid-d center" data-role="navbar">
+          <ul>
+            <li><a href="#mainMenu" data-icon="bars">Menu</a>
+            </li>
+            <li><a href="#win1" data-icon="calendar">Events</a>
+            </li>
+            <li><a href="#home" data-icon="home">Home</a>
+            </li>
+            <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+            </li>
+            <li><a href="#help" data-icon="info">Help</a>
+            </li>
+          </ul>
+        </div>
+		</div>
+</div>
+
+<!--Help-->
+<div data-role="page" id="help" data-theme="b" data-url="two">
+    <div data-role="header">
+        <h1>SJSU Library</h1>
+    </div>
+    
+    <div data-role="collapsibleset" class="ui-collapsible-set ui-group-theme-a ui-corner-all data-theme-a data-content-theme-a">
+
+      <div data-role="collapsible">
+        <h3>Frequently Asked Questions</h3>
+        <p>Answers for Frequently Asked Questions in the library. You can also email new questions.</p>
+        <a href="http://answers.sjlibrary.org/" class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on SJSU Library Website</a>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>24 Hour Live Reference Chat</h3>
+        <p>Use the 24/7 Chat service to get help with questions or research.</p>
+
+        <a href="http://library.sjsu.edu/ask-librarian/ask-librarian" class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on SJSU Library Website</a>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Research Guides by Subject</h3>
+        <p>Research Guides list books, databases and online tools for all departments and many individual courses.</p>
+
+        <a href="http://libguides.sjsu.edu/index" class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on SJSU Library Website</a>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Find a Librarian</h3>
+        <p>There is a librarian for every subject offered at SJSU; find your subject librarian here.</p>
+        <a href="http://library.sjsu.edu/sjsu-library-staff-directory/sjsu-library-subject-liaisons"class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on SJSU Library Website</a>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Tech Help</h3>
+        <p> The Student Technology Training Center provides training, workshops and drop-in help with software such as Excel and SPSS.</p>
+
+        <a href="#" class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on Map</a>
+
+        <a href="http://library.sjsu.edu/student-technology-training-center/student-technology-training-center" class="ui-btn ui-mini ui-btn-inline ui-corner-all">Find on SJSU Library Website</a>
+      </div>
+    </div> 
+
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+        <div class="ui-grid-d center" data-role="navbar">
+          <ul>
+              <li><a href="#mainMenu" data-icon="bars">Menu</a>
+              </li>
+              <li><a href="#win1" data-icon="calendar">Events</a>
+              </li>
+              <li><a href="#home" data-icon="home">Home</a>
+              </li>
+              <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+              </li>
+              <li><a href="#help" data-icon="info">Help</a>
+              </li>
+          </ul>
+        </div>
+    </div>
+
+</div><!--/Help-->
+
+  <!--Events-->
+  <div data-role=page id="win2" data-theme="b" data-url="two">
+  
+  <a href="#win1" data-icon="back">Back</a>
+
+  <div data-role="header">
+            <h1>SJSU Library</h1>
+  </div>
+
+  
+  <div data-role=content>
+    <div id="jMonthCalendar" style="display:none; width:100%">
+    </div>
+    <div id="evtsTable">
+      Library Events
+    </div>
+  </div>
+  
+  <div data-role=button id="toggleEvtsVw" class="table">
+    Show calendar view
+  </div>
+  
+  <div data-role=popup id='calPopup' data-position-to="origin" class="ui-content">
+  </div>
+      
+    <div data-role="footer" data-id="foo1" data-position="fixed">
+      <div class="ui-grid-d center" data-role="navbar">
+        <ul>
+          <li><a href="#mainMenu" data-icon="bars">Menu</a>
+          </li>
+          <li><a href="#win1" data-icon="calendar">Events</a>
+          </li>
+          <li><a href="#home" data-icon="home">Home</a>
+          </li>
+          <li><a href="http://library.sjsu.edu" data-icon="action">SJSU Library Website</a>
+          </li>
+          <li><a href="#help" data-icon="info">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+  </div>
+
+<!--Events-->
+<div data-role=page id="win2" data-add-back-btn="true">
+  <div data-role="header">
+    <h1>Events</h1>
+    <div id="temptest">
+    </div>
+  </div>
+
+  <div data-role=content>
+    <p> Events</p>
+  </div>
+
+</div><!--/win2-->
+
+
+<!--Find Books-->
+<div data-role="page" id="findBooks" data-theme="b" data-url="two">
+
+    <div data-role="header">
+        <a href="#home" data-icon="back">Back</a>
+
+        <h1>Main Menu</h1>
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+        <div role="main" class="ui-content">
+                <label>Find Books:</label>
+                <ul data-role="listview" data-theme="a" data-filter="true"  data-filter-reveal="true" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis A - BL');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis A - BL</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis BM');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis BM</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis CJ - DT');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis CJ - DT</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis E - HB');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis E - HB</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis HC - HM');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis HC - HM</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis HC - HM');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis HC - HM</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis HQ - JN');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis HQ - JN</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis JQ');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis JQ</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis LB');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis LB</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis PA - PR');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis PA - PR</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis PR - PZ');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis PR - PZ</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis QD');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis QD</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis R - S');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis R - S</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Thesis TK - Z');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Thesis TK - Z</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Folio N');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Folio N</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Folio G');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Folio G</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Folio F');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Folio F</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Folio A');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Folio A</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Fiction');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Fiction</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Non-fiction');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Non-Fiction</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('J Fiction');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">J Fiction</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('Ethnic Studies');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Ethnic Studies</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('A - JA');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">A - JA</a></li>
+                    <li><a href="#home" onclick="javascript:clearMap();showLocation('JA - Z');" class="ui-btn ui-btn-icon-right ui-icon-carat-r">JA - Z</a></li></ul>
+                <div id="notFound" style="display:none">
+                    <p>The call number was not found.</p>
+                </div>
+            <p>Ex. Thesis A, Folio F</p>
+
+            <p>Don't have a call number?</p>
+            <a href="http://catalog.sjlibrary.org/search/" data-role="button">Search the SJSU Catalog</a>
+        </div>
+
+    </div>
+    <!-- /content -->
+    
+    <div data-role="footer" data-id="foo1" data-position="fixed" id="footer">
+      <div class="ui-grid-d center" data-role="navbar">
+        <ul>
+          <li><a href="#mainMenu" data-icon="bars">Menu</a>
+          </li>
+          <li><a href="#win1" data-icon="calendar">Events</a>
+          </li>
+          <li><a href="#home" data-icon="home">Home</a>
+          </li>
+          <li><a href="http://library.sjsu.edu" data-icon="action">SJSU ibrary Website</a>
+          </li>
+          <li><a href="#help" data-icon="info">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>  
+        
+
+<script>
+
+  $("#toggleEvtsVw").bind("click",function(event)
+  	{
+  		var toggleBtn = $("#toggleEvtsVw");
+  		if(toggleBtn.hasClass("table"))
+  		{
+  			toggleBtn.removeClass("table");
+  			toggleBtn.addClass("cal");
+  			toggleBtn.html("Show table");
+  			$("#jMonthCalendar").show();
+  			$("#evtsTable").hide();
+  		}
+  		else if(toggleBtn.hasClass("cal"))
+  		{
+  			toggleBtn.removeClass("cal");
+  			toggleBtn.addClass("table");
+  			toggleBtn.html("Show calendar view");
+  			$("#jMonthCalendar").hide();
+  			$("#evtsTable").show();
+  		}
+  	});
+
+  $(document).bind("pagebeforeshow",function()
+  { 
+
+     GetEvents();
+  });
+  function PopulateEventsTable(eventList)
+  {
+  	 //var tableHTML = "<div class=ui-grid-a>";
+  	 var tableHTML = "<table data-role='table' class='ui-responsive ui-shadow'><thead><tr><th class='tcell'>Event Name</th><th>Time & Location</th></tr></thead><tbody>";
+     for(var i = 0; i<eventList.length; i++)
+     {
+  	   var lastClass = i==eventList.length-1?"last":"";
+  	   //tableHTML+= "<div class='ui-block-a "+lastClass+"'>"+eventList[i].Title+"</div><div class='ui-block-b "+lastClass+"'>"+eventList[i].Location+"</br>"+eventList[i].Time+"</div>";
+  	   //tableHTML+= "<tr><td class='ui-block-a "+lastClass+"'>"+eventList[i].Title+"</td><td class='ui-block-b "+lastClass+"'>"+eventList[i].Location+"</br>"+eventList[i].Time+"</td></tr>";
+  	   tableHTML+= "<tr><td class='tcell'>"+eventList[i].Title+"</td><td>"+eventList[i].Location+"</br>"+eventList[i].Time+"</td></tr>";
+     }
+     //tableHTML+="</div>";
+     tableHTML+="</tbody></table>";
+     $("#evtsTable").html(tableHTML);
+  }
+  function PopulateEventsCalendar(eventList)
+  {
+      var options = {
+      containerId: "#evtsCal",
+      headerHeight: 50,
+      firstDayOfWeek: 0,
+      calendarStartDate:new Date(),
+      dragableEvents: false,
+      activeDroppableClass: false,
+      hoverDroppableClass: false,
+      navLinks: {
+      enableToday: true,
+      enableNextYear: true,
+      enablePrevYear: true,
+      p:'Prev',
+      n:'Next',
+      t:'Today',
+      showMore: 'Show More'
+      },
+      onMonthChanging: function(dateIn) { return true; },
+      onMonthChanged: function(dateIn) { return true; },
+      onEventLinkClick: function(event) { return true; },
+      onEventBlockClick: function(event) { return true; },
+      onEventBlockOver: function(event) { return true; },
+      onEventBlockOut: function(event) { return true; },
+      onDayLinkClick: function(date) { return true; },
+      onDayCellClick: function(date) { return true; },
+      onDayCellDblClick: function(dateIn) { return true; },
+      onEventDropped: function(event, newDate) { return true; },
+      onShowMoreClick: function(eventArray) { return true; },
+      locale: {
+      days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+      months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      weekMin: 'wk'
+      }
+  };
+
+     $.jMonthCalendar.Initialize(options, eventList);
+     $("#jMonthCalendar").hide();
+  }
+  function GetEvents()
+  {
+  	$.ajax({
+  		type: 'POST',
+  		url: "http://library.sjsu.edu/events/events-feed",
+  		dataType: 'xml',
+  		crossDomain: true,
+  		success: function(res)
+  		{
+  			var eventList = new Array();
+  			var i = 0;
+  			var $xml = $(res);
+
+  			$xml.find("item").each(function(){
+  				var $this = $(this),
+  				item = {Title: $this.find("title").text()};			
+
+  				   var descNode = document.createElement("div");
+  				   descNode.innerHTML = $this.find("description").text();
+  				   var dt = descNode.getElementsByClassName('date-display-single');
+  				   var dtTime = dt[0].textContent.split(/[- ]/);
+
+  				   var location = descNode.getElementsByClassName('field-name-field-eroom')[0].textContent;
+  				   item.Location = location;
+  				   item.StartDateTime = new Date(dtTime[0]);
+  				   item.Time = dt[0].textContent;
+  				   item.EventId = i;
+  				   item.CssClass = "Meeting";
+  				   item.Url="#"
+  				   item.Description =  $this.find("description").text();
+  				   item.ToolTip = item.Title+"</br>Location: "+item.Location+"</br>Time: "+item.Time+"</br>";			
+  				   eventList[i] = item;
+  				   i++;
+  			        });
+
+  			PopulateEventsTable(eventList);
+  			PopulateEventsCalendar(eventList);
+  		}
+  	}); 
+
+  }
+
+  </script>
+
+  </body>
+
+</html>
